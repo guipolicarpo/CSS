@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Especificidade CSS</title>
+    <style>
+        /* 1º. Inline | 2º ID | 3º Classe/Atributo | 4º Elemento*/
+
+        div{ background-color: blue; color: white;}
+        div:hover{background-color: lightskyblue;}
+        div[wm-cor] {background-color: orange;}
+        #unico1:hover{background-color: black;}
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="unico1" class="estilo">
+        #unico1 vs .estilo vs inline
+    </div>
+    <div id="unico2" class="estilo">#unico2 vs .estilo</div>
+    <div class="estilo" wm-cor>.estilo vs wm-cor</div>
+    <div wm-cor>wm-cor</div>
+    <div class="estilo">.estilo</div>
+    <div>elemento</div>
+</body>
+
+</html>

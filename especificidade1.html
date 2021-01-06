@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Especificidade CSS</title>
+    <style>
+        /* 3º */
+        p{
+            background-color: grey;
+        }
+        /* 2º */
+        .observacao{
+            background-color: blue;
+            border: dashed 5px;
+            padding: 20px;
+            font-size:  40px;
+        }
+        /* 1º */
+        p.observacao{
+            text-align: center;
+            padding: 2px;
+            background: linear-gradient(to right, red, yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <p class='observacao'>Olha essa observação!!!!</p>
+</body>
+
+</html>
